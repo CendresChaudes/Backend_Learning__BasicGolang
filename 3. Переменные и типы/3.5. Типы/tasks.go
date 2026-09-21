@@ -18,7 +18,12 @@ func main() {
 // Верни их одной строкой через fmt.Sprintf("%d %.1f %s %t", count, price, title, ready).
 // %d — целое, %.1f — дробь с одним знаком, %s — текст, %t — логическое значение.
 func task1() string {
-	return ""
+	var count = 7
+	var price = 2.5
+	var title = "Go"
+	var ready = true
+
+	return fmt.Sprintf("%d %.1f %s %t", count, price, title, ready)
 }
 
 // Задание 2
@@ -26,12 +31,17 @@ func task1() string {
 // Верни их нулевые значения через fmt.Sprintf("%d %.1f %q %t", ...).
 // %q покажет пустую строку в кавычках.
 func task2() string {
-	return ""
+	var count int
+	var price float64
+	var title string
+	var ready bool
+
+	return fmt.Sprintf("%d %.1f %q %t", count, price, title, ready)
 }
 
 // Задание 3
 // count — число штук (int), price — цена одной штуки (float64).
 // Верни сумму. Перед умножением преобразуй count в float64.
 func task3(count int, price float64) float64 {
-	return 0
+	return float64(count) * price
 }

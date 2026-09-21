@@ -16,19 +16,19 @@ func main() {
 // Задание 1
 // Верни команду, которой создают модуль для программы по имени wallet.
 func task1() string {
-	return ""
+	return "go mod init wallet"
 }
 
 // Задание 2
 // Верни две строки так, как они выглядят в go.mod для модуля wallet на Go 1.27.1.
 // Между строками поставь \n.
 func task2() string {
-	return ""
+	return "module wallet\ngo 1.27.1"
 }
 
 // Задание 3
 // Верни одно слово: что go.mod запоминает про чужие пакеты.
 // Слово: зависимости.
 func task3() string {
-	return ""
+	return "зависимости"
 }

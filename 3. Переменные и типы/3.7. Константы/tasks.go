@@ -17,7 +17,8 @@ func main() {
 // Объяви константу appName со значением "wallet".
 // Верни её.
 func task1() string {
-	return ""
+	const appName = "wallet"
+	return appName
 }
 
 // Задание 2
@@ -25,12 +26,21 @@ func task1() string {
 // Объяви переменную attempts со значением 1 и увеличь её на 1.
 // Верни attempts + maxAttempts. Константу не переназначай.
 func task2() int {
-	return 0
+	const maxAttempts = 3
+	attempts := 1
+	attempts = attempts + 1
+	return attempts + maxAttempts
 }
 
 // Задание 3
 // Блоком const объяви monday, tuesday и wednesday через iota, чтобы номера шли 0, 1, 2.
 // Верни значение wednesday.
 func task3() int {
-	return 0
+	const (
+		monday = iota
+		tuesday
+		wednesday
+	)
+
+	return wednesday
 }

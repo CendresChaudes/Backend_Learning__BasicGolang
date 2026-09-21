@@ -18,19 +18,29 @@ func main() {
 // через var с явным типом, через var без типа и через :=.
 // Верни сумму трёх переменных.
 func task1() int {
-	return 0
+	var num1 int = 42
+	var num2 = 42
+	num3 := 42
+
+	return num1 + num2 + num3
 }
 
 // Задание 2
 // Одной строкой создай language "Go" и year 2009.
 // Верни fmt.Sprintf("%s %d", language, year).
 func task2() string {
-	return ""
+	var language, year = "Go", 2009
+	return fmt.Sprintf("%s %d", language, year)
 }
 
 // Задание 3
 // Блоком var ( ) объяви host "localhost", port 8080 и debug false.
 // Верни fmt.Sprintf("%s %d %t", host, port, debug).
 func task3() string {
-	return ""
+	var (
+		host  = "localhost"
+		port  = 8080
+		debug = false
+	)
+	return fmt.Sprintf("%s %d %t", host, port, debug)
 }
