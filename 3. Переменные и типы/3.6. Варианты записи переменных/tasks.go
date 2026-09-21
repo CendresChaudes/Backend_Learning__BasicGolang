@@ -4,34 +4,33 @@ import "fmt"
 
 func main() {
 	fmt.Println("Задание 1")
-	task1()
+	fmt.Println(task1())
 
 	fmt.Println("Задание 2")
-	task2()
+	fmt.Println(task2())
 
 	fmt.Println("Задание 3")
-	task3()
+	fmt.Println(task3())
 }
 
 // Задание 1
 // Объяви число 42 тремя способами:
 // через var с явным типом, через var без типа и через :=.
-// Напечатай все три переменные.
-func task1() {
-	fmt.Println("задание 1: замени эту строку")
+// Верни сумму трёх переменных.
+func task1() int {
+	return 0
 }
 
 // Задание 2
-// Одной строкой создай две переменные: language со значением "Go" и year со значением 2009.
-// Напечатай их.
-func task2() {
-	fmt.Println("задание 2: замени эту строку")
+// Одной строкой создай language "Go" и year 2009.
+// Верни fmt.Sprintf("%s %d", language, year).
+func task2() string {
+	return ""
 }
 
 // Задание 3
-// Блоком var ( ) объяви три настройки программы:
-// host "localhost", port 8080 и debug false.
-// Напечатай все три.
-func task3() {
-	fmt.Println("задание 3: замени эту строку")
+// Блоком var ( ) объяви host "localhost", port 8080 и debug false.
+// Верни fmt.Sprintf("%s %d %t", host, port, debug).
+func task3() string {
+	return ""
 }

@@ -4,34 +4,32 @@ import "fmt"
 
 func main() {
 	fmt.Println("Задание 1")
-	task1()
+	fmt.Println(task1())
 
 	fmt.Println("Задание 2")
-	task2()
+	fmt.Println(task2("backend"))
 
 	fmt.Println("Задание 3")
-	task3()
+	fmt.Println(task3("=", 20))
 }
 
 // Задание 1
-// Напечатай имя пакета, в котором лежит этот файл.
-// Это одна строка текста. Пакет здесь не библиотека, а программа.
-func task1() {
-	fmt.Println("задание 1: замени эту строку")
+// Верни имя пакета, в котором лежит этот файл.
+// Это программа, а не библиотека.
+func task1() string {
+	return ""
 }
 
 // Задание 2
-// Подключи пакет strings.
-// Возьми строку "backend" и напечатай её заглавными буквами.
-// Используй strings.ToUpper.
-func task2() {
-	fmt.Println("задание 2: замени эту строку")
+// text — строка, которую передают при вызове. Подключать своё значение не нужно.
+// Подключи пакет strings и верни text заглавными буквами через strings.ToUpper.
+func task2(text string) string {
+	return ""
 }
 
 // Задание 3
-// Снова используй strings.
-// Напечатай строку из 20 символов "=" с помощью strings.Repeat.
-// Следующей строкой напечатай слово "готово".
-func task3() {
-	fmt.Println("задание 3: замени эту строку")
+// char — кусок текста, n — сколько раз его повторить.
+// Верни результат strings.Repeat.
+func task3(char string, n int) string {
+	return ""
 }

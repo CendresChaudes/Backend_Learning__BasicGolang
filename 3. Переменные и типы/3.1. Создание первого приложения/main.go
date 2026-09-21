@@ -3,9 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println("Hello, World!")
-
-	task1()
-	task2()
-	task3()
+	fmt.Println(task1())
+	fmt.Println(task2())
+	fmt.Println(task3())
 }
