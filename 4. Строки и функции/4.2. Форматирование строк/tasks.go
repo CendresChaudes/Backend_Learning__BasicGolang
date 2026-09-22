@@ -17,17 +17,17 @@ func main() {
 // Через fmt.Sprintf собери "Go-2009".
 // В формате используй %s и %d. Между ними поставь дефис.
 func task1() string {
-	return ""
+	return fmt.Sprintf("%s-%d", "Go", 2009)
 }
 
 // Задание 2
 // Через fmt.Sprintf и глагол %t получи строку для значения true.
 func task2() string {
-	return ""
+	return fmt.Sprintf("%t", true)
 }
 
 // Задание 3
 // Через fmt.Sprintf и глагол %.1f получи дробь 3.1415 с одним знаком после точки.
 func task3() string {
-	return ""
+	return fmt.Sprintf("%.1f", 3.1415)
 }

@@ -16,17 +16,17 @@ func main() {
 // Задание 1
 // Верни сумму a и b.
 func task1(a int, b int) int {
-	return 0
+	return a + b
 }
 
 // Задание 2
 // Верни строку "город " и название city через пробел.
 func task2(city string) string {
-	return ""
+	return "город " + city
 }
 
 // Задание 3
 // Верни n, умноженное на 2.
 func task3(n int) int {
-	return 0
+	return n * 2
 }

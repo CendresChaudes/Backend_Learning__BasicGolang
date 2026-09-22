@@ -19,18 +19,19 @@ func main() {
 // service объявлена снаружи функции, на уровне пакета.
 // Верни её.
 func task1() string {
-	return ""
+	return service
 }
 
 // Задание 2
 // Внутри функции создай новую переменную service со значением "worker".
 // Она закрывает внешнюю service только здесь. Верни внутреннюю.
 func task2() string {
-	return ""
+	service := "worker"
+	return service
 }
 
 // Задание 3
 // port виден только внутри этой функции. Верни его.
 func task3(port int) int {
-	return 0
+	return port
 }

@@ -16,17 +16,17 @@ func main() {
 // Задание 1
 // Верни код ответа 200.
 func task1() int {
-	return 0
+	return 200
 }
 
 // Задание 2
 // Верни текст "ok".
 func task2() string {
-	return ""
+	return "ok"
 }
 
 // Задание 3
 // Верни left минус right.
 func task3(left int, right int) int {
-	return 0
+	return left - right
 }

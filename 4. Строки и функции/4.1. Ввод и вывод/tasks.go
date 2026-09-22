@@ -17,19 +17,21 @@ func main() {
 // Собери текст так, как его напечатал бы fmt.Println("Готово").
 // Возьми fmt.Sprintln и верни эту строку.
 func task1() string {
-	return ""
+	return fmt.Sprintln("Готово")
 }
 
 // Задание 2
 // Собери текст так, как его напечатал бы fmt.Print("id", 7).
 // Возьми fmt.Sprint и верни эту строку. Перевода строки в конце нет.
 func task2() string {
-	return ""
+	return fmt.Sprint("id ", 7)
 }
 
 // Задание 3
 // Прочитай число из строки "15" через fmt.Sscan.
 // Запиши его в переменную и верни эту переменную.
 func task3() int {
-	return 0
+	var someVar int
+	fmt.Sscan("15", &someVar)
+	return someVar
 }

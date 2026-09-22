@@ -18,18 +18,18 @@ func main() {
 // Образец: "пользователь %s", значение: "Анна".
 // Верни message.
 func task1() string {
-	return ""
+	return fmt.Sprintf("пользователь %s", "Анна")
 }
 
 // Задание 2
 // Через fmt.Sprintf собери "сумма 19.90".
 // Глагол %.2f, число 19.9.
 func task2() string {
-	return ""
+	return fmt.Sprintf("сумма %.2f", 19.9)
 }
 
 // Задание 3
 // Через fmt.Sprintf и глагол %q получи строку Go в двойных кавычках.
 func task3() string {
-	return ""
+	return fmt.Sprintf("%q", "Go")
 }
