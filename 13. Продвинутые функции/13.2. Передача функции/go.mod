@@ -1,3 +1,0 @@
-module lesson13/pass
-
-go 1.27.1

@@ -4,8 +4,8 @@
 GOBIN := $(shell go env GOPATH)/bin
 GOLANGCI_LINT := $(GOBIN)/golangci-lint
 
-NEXT := ../7.2. Изменение Map
-PREV := ../../6. Array и Slice/6.11. Увеличение cap
+NEXT := ../7.2. Итерация по Map
+PREV := ../../6. Array и Slice/6.4. Упражнение Расчёт баланса
 
 pretty: ## Отформатировать код
 	$(GOLANGCI_LINT) fmt ./...

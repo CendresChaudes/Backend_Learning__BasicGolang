@@ -4,8 +4,8 @@
 GOBIN := $(shell go env GOPATH)/bin
 GOLANGCI_LINT := $(GOBIN)/golangci-lint
 
-NEXT := ../6.2. Работа с массивами
-PREV := ../../5. Управление потоком/5.10. Panic
+NEXT := ../6.2. Slice
+PREV := ../../5. Управление потоком/5.5. Error
 
 pretty: ## Отформатировать код
 	$(GOLANGCI_LINT) fmt ./...
