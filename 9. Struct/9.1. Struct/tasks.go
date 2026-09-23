@@ -21,13 +21,13 @@ func main() {
 // Задание 1
 // Создай User с именем "Ann" и возрастом 20. Верни имя.
 func task1() string {
-	return ""
+	return User{Name: "Ann", Age: 20}.Name
 }
 
 // Задание 2
 // Создай User с именем "Ann" и возрастом 20. Верни возраст.
 func task2() int {
-	return 0
+	return User{Name: "Ann", Age: 20}.Age
 }
 
 // Задание 3
@@ -35,5 +35,10 @@ func task2() int {
 // Верни длину имени плюс возраст.
 // Незаполненный возраст равен 0, поэтому для "Ann" получится 3.
 func task3() int {
-	return 0
+
+	user := User{Name: "Ann"}
+	name := user.Name
+	age := user.Age
+
+	return len(name + fmt.Sprint(age))
 }

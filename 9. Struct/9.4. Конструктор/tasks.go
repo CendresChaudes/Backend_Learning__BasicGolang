@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"errors"
+	"fmt"
+)
 
 type User struct {
 	Name string
@@ -25,20 +28,40 @@ func main() {
 // Иначе верни заполненный User и nil.
 // task1 вызывает NewUser. Если ошибка есть, верни её текст.
 // Если ошибки нет, верни имя.
+
+func NewUser(name string, age int) (User, error) {
+	if name == "" {
+		return User{}, errors.New("пустое имя")
+	}
+
+	if age < 0 {
+		return User{}, errors.New("отрицательный возраст")
+	}
+
+	return User{Name: name, Age: age}, nil
+}
+
 func task1(name string, age int) string {
-	return ""
+	user, err := NewUser(name, age)
+	if err != nil {
+		return err.Error()
+	}
+
+	return user.Name
 }
 
 // Задание 2
 // Вызови NewUser с пустым именем и возрастом 20.
 // Верни текст ошибки.
 func task2() string {
-	return ""
+	_, err := NewUser("", 20)
+	return err.Error()
 }
 
 // Задание 3
 // Вызови NewUser с именем "Ann" и возрастом -1.
 // Верни текст ошибки.
 func task3() string {
-	return ""
+	_, err := NewUser("Ann", -1)
+	return err.Error()
 }

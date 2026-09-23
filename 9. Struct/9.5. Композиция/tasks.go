@@ -26,18 +26,31 @@ func main() {
 // Опиши метод Label() string у User: "user: " и имя.
 // Создай Admin с именем "Ann" и уровнем 2.
 // Верни adm.Name.
+func (user User) Label() string {
+	return "user: " + user.Name
+}
+
 func task1() string {
-	return ""
+	return Admin{
+		User:  User{Name: "Ann"},
+		Level: 2,
+	}.Name
 }
 
 // Задание 2
 // У того же Admin верни Level.
 func task2() int {
-	return 0
+	return Admin{
+		User:  User{Name: "Ann"},
+		Level: 2,
+	}.Level
 }
 
 // Задание 3
 // У того же Admin верни результат Label().
 func task3() string {
-	return ""
+	return Admin{
+		User:  User{Name: "Ann"},
+		Level: 2,
+	}.Label()
 }

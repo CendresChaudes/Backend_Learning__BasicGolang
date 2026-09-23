@@ -22,22 +22,40 @@ func main() {
 // Опиши метод Label() string у User.
 // Он возвращает "user: " и сразу имя.
 // Верни подпись пользователя "Ann".
+func (user User) Label() string {
+	return "user: " + user.Name
+}
+
 func task1() string {
-	return ""
+	return User{Name: "Ann"}.Label()
 }
 
 // Задание 2
 // Опиши метод Rename(name string) с получателем *User.
 // Он записывает новое имя в исходный struct.
 // Создай User с именем "Ann", переименуй в "Mia" и верни имя.
+func (user *User) Rename(name string) {
+	user.Name = name
+}
+
 func task2() string {
-	return ""
+	user := User{Name: "Ann"}
+	user.Rename("Mia")
+
+	return user.Name
 }
 
 // Задание 3
 // Опиши метод Older() с получателем *User.
 // Он увеличивает возраст на 1.
 // Создай User с возрастом 20, вызови Older и верни возраст.
+func (user *User) Older() {
+	user.Age = user.Age + 1
+}
+
 func task3() int {
-	return 0
+	user := User{Age: 20}
+	user.Older()
+
+	return user.Age
 }
