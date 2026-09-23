@@ -17,18 +17,27 @@ func main() {
 // Задание 1
 // Возьми адрес n и верни число, которое лежит по этому адресу.
 func task1(n int) int {
-	return 0
+	addr := &n
+	return *addr
 }
 
 // Задание 2
 // Через указатель запиши в переменную n + 1 и верни новое число.
 func task2(n int) int {
-	return 0
+	addr := &n
+	*addr = *addr + 1
+	return *addr
 }
 
 // Задание 3
 // Если n равен nil, верни 0.
 // Иначе прибавь к числу по этому адресу 1 и верни новое число.
 func task3(n *int) int {
-	return 0
+	if n == nil {
+		return 0
+	}
+
+	*n = *n + 1
+
+	return *n
 }
