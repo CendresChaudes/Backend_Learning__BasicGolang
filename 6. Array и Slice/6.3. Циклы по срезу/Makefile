@@ -4,7 +4,7 @@
 GOBIN := $(shell go env GOPATH)/bin
 GOLANGCI_LINT := $(GOBIN)/golangci-lint
 
-NEXT := ../6.3. Map
+NEXT := ../../7. Map/7.1. Map
 PREV := ../6.2. Slice
 
 pretty: ## Отформатировать код

@@ -17,17 +17,35 @@ func main() {
 // Задание 1
 // Верни сумму всех значений map.
 func task1(codes map[string]int) int {
-	return 0
+	var sum int
+	for _, v := range codes {
+		sum += v
+	}
+
+	return sum
 }
 
 // Задание 2
 // Верни, сколько значений строго больше 300.
 func task2(codes map[string]int) int {
-	return 0
+	var count int
+	for _, v := range codes {
+		if v > 300 {
+			count++
+		}
+	}
+
+	return count
 }
 
 // Задание 3
 // Верни true, если ключ key есть. Ищи его циклом range.
 func task3(codes map[string]int, key string) bool {
+	for k, _ := range codes {
+		if k == key {
+			return true
+		}
+	}
+
 	return false
 }

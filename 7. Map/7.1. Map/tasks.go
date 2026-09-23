@@ -17,18 +17,25 @@ func main() {
 // Задание 1
 // Верни значение по ключу key.
 func task1(codes map[string]int, key string) int {
-	return 0
+	return codes[key]
 }
 
 // Задание 2
 // Если ключ key есть, верни его значение.
 // Если ключа нет, верни -1.
 func task2(codes map[string]int, key string) int {
-	return 0
+	value, ok := codes[key]
+	if ok {
+		return value
+	}
+
+	return -1
 }
 
 // Задание 3
 // Удали ключ key и верни новую длину map.
 func task3(codes map[string]int, key string) int {
-	return 0
+	delete(codes, key)
+
+	return len(codes)
 }
