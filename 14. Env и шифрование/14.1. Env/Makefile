@@ -5,7 +5,7 @@ GOBIN := $(shell go env GOPATH)/bin
 GOLANGCI_LINT := $(GOBIN)/golangci-lint
 
 NEXT := ../14.2. Шифрование
-PREV := ../../13. Продвинутые функции/13.4. Замыкание
+PREV := ../../13. Продвинутые функции/13.3. Замыкание
 
 pretty: ## Отформатировать код
 	$(GOLANGCI_LINT) fmt ./...

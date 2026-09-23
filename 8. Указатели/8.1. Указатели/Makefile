@@ -4,8 +4,8 @@
 GOBIN := $(shell go env GOPATH)/bin
 GOLANGCI_LINT := $(GOBIN)/golangci-lint
 
-NEXT := ../8.2. Упражнение Reverse массива
-PREV := ../../7. Map/7.3. Упражнение Утилита закладок
+NEXT := ../../9. Struct/9.1. Struct
+PREV := ../../7. Map/7.2. Итерация по Map
 
 pretty: ## Отформатировать код
 	$(GOLANGCI_LINT) fmt ./...

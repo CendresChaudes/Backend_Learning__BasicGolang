@@ -5,7 +5,7 @@ GOBIN := $(shell go env GOPATH)/bin
 GOLANGCI_LINT := $(GOBIN)/golangci-lint
 
 NEXT := ../10.2. Сторонние пакеты
-PREV := ../../9. Struct/9.6. Композиция
+PREV := ../../9. Struct/9.5. Композиция
 
 pretty: ## Отформатировать код
 	$(GOLANGCI_LINT) fmt ./...

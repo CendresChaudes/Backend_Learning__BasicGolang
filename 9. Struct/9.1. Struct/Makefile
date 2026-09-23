@@ -5,7 +5,7 @@ GOBIN := $(shell go env GOPATH)/bin
 GOLANGCI_LINT := $(GOBIN)/golangci-lint
 
 NEXT := ../9.2. Указатели на struct
-PREV := ../../8. Указатели/8.2. Упражнение Reverse массива
+PREV := ../../8. Указатели/8.1. Указатели
 
 pretty: ## Отформатировать код
 	$(GOLANGCI_LINT) fmt ./...

@@ -4,7 +4,7 @@
 GOBIN := $(shell go env GOPATH)/bin
 GOLANGCI_LINT := $(GOBIN)/golangci-lint
 
-NEXT := ../12.4. Упражнение Generic ввода
+NEXT := ../../13. Продвинутые функции/13.1. Функции как значения
 PREV := ../12.2. Any и типы
 
 pretty: ## Отформатировать код

@@ -4,7 +4,7 @@
 GOBIN := $(shell go env GOPATH)/bin
 GOLANGCI_LINT := $(GOBIN)/golangci-lint
 
-NEXT := ../10.3. Упражнение Package файлов
+NEXT := ../../11. Работа с ОС/11.1. Файлы
 PREV := ../10.1. Пакеты
 
 pretty: ## Отформатировать код

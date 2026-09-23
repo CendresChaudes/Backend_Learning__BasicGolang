@@ -4,7 +4,7 @@
 GOBIN := $(shell go env GOPATH)/bin
 GOLANGCI_LINT := $(GOBIN)/golangci-lint
 
-NEXT := ../7.3. Упражнение Утилита закладок
+NEXT := ../../8. Указатели/8.1. Указатели
 PREV := ../7.1. Map
 
 pretty: ## Отформатировать код

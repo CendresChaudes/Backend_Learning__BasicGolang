@@ -4,7 +4,7 @@
 GOBIN := $(shell go env GOPATH)/bin
 GOLANGCI_LINT := $(GOBIN)/golangci-lint
 
-NEXT := ../9.3. Упражнение Генерация пароля
+NEXT := ../9.3. Методы
 PREV := ../9.1. Struct
 
 pretty: ## Отформатировать код

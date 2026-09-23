@@ -4,7 +4,7 @@
 GOBIN := $(shell go env GOPATH)/bin
 GOLANGCI_LINT := $(GOBIN)/golangci-lint
 
-NEXT := ../11.3. Упражнение Меню выбора
+NEXT := ../../12. Интерфейсы/12.1. Интерфейсы
 PREV := ../11.1. Файлы
 
 pretty: ## Отформатировать код

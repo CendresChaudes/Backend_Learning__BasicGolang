@@ -4,8 +4,8 @@
 GOBIN := $(shell go env GOPATH)/bin
 GOLANGCI_LINT := $(GOBIN)/golangci-lint
 
-NEXT := ../15.2. GET запрос
-PREV := ../../14. Env и шифрование/14.2. Шифрование
+NEXT := ../../14. Env и шифрование/14.1. Env
+PREV := ../13.2. Variadic
 
 pretty: ## Отформатировать код
 	$(GOLANGCI_LINT) fmt ./...

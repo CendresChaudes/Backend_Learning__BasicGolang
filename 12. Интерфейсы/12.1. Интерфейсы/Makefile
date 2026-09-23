@@ -5,7 +5,7 @@ GOBIN := $(shell go env GOPATH)/bin
 GOLANGCI_LINT := $(GOBIN)/golangci-lint
 
 NEXT := ../12.2. Any и типы
-PREV := ../../11. Работа с ОС/11.4. Упражнение Пароли
+PREV := ../../11. Работа с ОС/11.2. JSON
 
 pretty: ## Отформатировать код
 	$(GOLANGCI_LINT) fmt ./...

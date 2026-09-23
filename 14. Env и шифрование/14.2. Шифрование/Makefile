@@ -4,7 +4,7 @@
 GOBIN := $(shell go env GOPATH)/bin
 GOLANGCI_LINT := $(GOBIN)/golangci-lint
 
-NEXT := ../14.3. Упражнение Применение шифрования
+NEXT := ../../15. HTTP запросы/15.1. CLI флаги
 PREV := ../14.1. Env
 
 pretty: ## Отформатировать код

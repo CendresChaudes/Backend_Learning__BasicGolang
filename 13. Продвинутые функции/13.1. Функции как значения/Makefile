@@ -4,8 +4,8 @@
 GOBIN := $(shell go env GOPATH)/bin
 GOLANGCI_LINT := $(GOBIN)/golangci-lint
 
-NEXT := ../13.2. Упражнение Поиск по логину
-PREV := ../../12. Интерфейсы/12.4. Упражнение Generic ввода
+NEXT := ../13.2. Variadic
+PREV := ../../12. Интерфейсы/12.3. Generic
 
 pretty: ## Отформатировать код
 	$(GOLANGCI_LINT) fmt ./...
