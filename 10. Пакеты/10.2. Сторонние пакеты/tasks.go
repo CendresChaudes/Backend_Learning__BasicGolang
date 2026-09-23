@@ -1,6 +1,10 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+
+	"rsc.io/quote"
+)
 
 func main() {
 	fmt.Println("Задание 1")
@@ -18,17 +22,17 @@ func main() {
 // Подключи пакет "rsc.io/quote".
 // Верни результат quote.Glass().
 func task1() string {
-	return ""
+	return quote.Glass()
 }
 
 // Задание 2
 // Верни результат quote.Go().
 func task2() string {
-	return ""
+	return quote.Go()
 }
 
 // Задание 3
 // Верни результат quote.Opt().
 func task3() string {
-	return ""
+	return quote.Opt()
 }

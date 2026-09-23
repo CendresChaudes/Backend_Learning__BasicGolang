@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"lesson10/packages/user"
+)
 
 func main() {
 	fmt.Println("Задание 1")
@@ -18,7 +21,7 @@ func main() {
 // В нём функция hello() string возвращает "привет".
 // В task1 вызови hello и верни результат.
 func task1() string {
-	return ""
+	return hello()
 }
 
 // Задание 2
@@ -26,7 +29,7 @@ func task1() string {
 // Экспортированная функция Login() string возвращает "Leo".
 // Верни user.Login().
 func task2() string {
-	return ""
+	return user.Login()
 }
 
 // Задание 3
@@ -36,5 +39,5 @@ func task2() string {
 // Метод Name() string возвращает его.
 // Верни имя у user.New("Ann").
 func task3() string {
-	return ""
+	return user.New("Ann").Name()
 }
