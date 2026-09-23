@@ -16,13 +16,17 @@ func main() {
 // Задание 1
 // Если code равен 200, верни "ok". Иначе верни "ошибка".
 func task1(code int) string {
-	return ""
+	if code == 200 {
+		return "ok"
+	}
+
+	return "ошибка"
 }
 
 // Задание 2
 // Верни true, только если age больше или равен 18 и active равен true.
 func task2(age int, active bool) bool {
-	return false
+	return age >= 18 && active
 }
 
 // Задание 3
@@ -30,5 +34,14 @@ func task2(age int, active bool) bool {
 // Иначе если score больше или равен 70, верни "хорошо".
 // Иначе верни "ещё раз".
 func task3(score int) string {
-	return ""
+	var result string
+	if score >= 90 {
+		result = "отлично"
+	} else if score >= 70 {
+		result = "хорошо"
+	} else {
+		result = "ещё раз"
+	}
+
+	return result
 }

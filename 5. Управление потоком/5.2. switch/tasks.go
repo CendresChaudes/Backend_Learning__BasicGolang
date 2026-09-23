@@ -18,7 +18,14 @@ func main() {
 // GET -> "чтение", POST -> "запись".
 // Для любого другого method верни "неизвестно".
 func task1(method string) string {
-	return ""
+	switch method {
+	case "GET":
+		return "чтение"
+	case "POST":
+		return "запись"
+	default:
+		return "неизвестно"
+	}
 }
 
 // Задание 2
@@ -26,7 +33,16 @@ func task1(method string) string {
 // 200 -> "ok", 404 -> "missing", 500 -> "down".
 // Для любого другого code верни "unknown".
 func task2(code int) string {
-	return ""
+	switch code {
+	case 200:
+		return "ok"
+	case 404:
+		return "missing"
+	case 500:
+		return "down"
+	default:
+		return "unknown"
+	}
 }
 
 // Задание 3
@@ -34,5 +50,12 @@ func task2(code int) string {
 // Если day от 1 до 5, верни "работа".
 // Для любого другого day верни "нет".
 func task3(day int) string {
-	return ""
+	switch day {
+	case 6, 7:
+		return "выходной"
+	case 1, 2, 3, 4, 5:
+		return "работа"
+	default:
+		return "нет"
+	}
 }

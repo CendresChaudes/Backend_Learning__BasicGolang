@@ -4,7 +4,7 @@
 GOBIN := $(shell go env GOPATH)/bin
 GOLANGCI_LINT := $(GOBIN)/golangci-lint
 
-NEXT := ../5.5. Error
+NEXT := ../../6. Array и Slice/6.1. Массивы
 PREV := ../5.3. Циклы
 
 pretty: ## Отформатировать код

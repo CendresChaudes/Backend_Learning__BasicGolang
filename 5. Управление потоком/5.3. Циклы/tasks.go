@@ -17,14 +17,28 @@ func main() {
 // Верни сумму чисел от 1 до n включительно.
 // Если n меньше 1, верни 0.
 func task1(n int) int {
-	return 0
+	var sum int
+	for i := 1; i <= n; i++ {
+		sum += i
+	}
+
+	return sum
 }
 
 // Задание 2
 // Верни сумму чётных чисел от 1 до n включительно.
 // Нечётное число пропускай через continue.
 func task2(n int) int {
-	return 0
+	var sum int
+	for i := 1; i <= n; i++ {
+		if i%2 != 0 {
+			continue
+		}
+
+		sum += i
+	}
+
+	return sum
 }
 
 // Задание 3
@@ -32,5 +46,13 @@ func task2(n int) int {
 // Когда нашёл его, выйди через break.
 // Если такого числа нет, верни 0.
 func task3(nums []int) int {
-	return 0
+	var result int
+	for _, num := range nums {
+		if num > 10 {
+			result = num
+			break
+		}
+	}
+
+	return result
 }

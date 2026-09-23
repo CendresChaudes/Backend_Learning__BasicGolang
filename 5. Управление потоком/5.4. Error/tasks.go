@@ -1,6 +1,10 @@
 package main
 
-import "fmt"
+import (
+	"errors"
+	"fmt"
+	"strings"
+)
 
 func main() {
 	fmt.Println("Задание 1")
@@ -18,6 +22,10 @@ func main() {
 // и верни текст метода Error.
 // Если port не пустой, ошибки нет: верни пустую строку.
 func task1(port string) string {
+	if strings.Trim(port, " ") == "" {
+		return errors.New("пустой порт").Error()
+	}
+
 	return ""
 }
 
@@ -26,6 +34,10 @@ func task1(port string) string {
 // и верни текст метода Error.
 // Если b не равен 0, верни пустую строку.
 func task2(b int) string {
+	if b == 0 {
+		return errors.New("деление на ноль").Error()
+	}
+
 	return ""
 }
 
@@ -33,5 +45,9 @@ func task2(b int) string {
 // Если n меньше 0, верни текст ошибки errors.New("отрицательное").
 // Иначе верни "ok".
 func task3(n int) string {
-	return ""
+	if n < 0 {
+		return errors.New("отрицательное").Error()
+	}
+
+	return "ok"
 }

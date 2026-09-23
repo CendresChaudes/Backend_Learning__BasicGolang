@@ -4,7 +4,7 @@
 GOBIN := $(shell go env GOPATH)/bin
 GOLANGCI_LINT := $(GOBIN)/golangci-lint
 
-NEXT := ../5.4. Упражнение Повторение ввода
+NEXT := ../5.4. Error
 PREV := ../5.2. switch
 
 pretty: ## Отформатировать код
