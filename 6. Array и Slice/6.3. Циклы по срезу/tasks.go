@@ -16,18 +16,35 @@ func main() {
 // Задание 1
 // Верни сумму codes. Обходи срез через range.
 func task1(codes []int) int {
-	return 0
+	var sum int
+	for _, v := range codes {
+		sum += v
+	}
+
+	return sum
 }
 
 // Задание 2
 // Верни, сколько чисел в codes строго больше 300.
 func task2(codes []int) int {
-	return 0
+	var count int
+	for _, v := range codes {
+		if v > 300 {
+			count++
+		}
+	}
+	return count
 }
 
 // Задание 3
 // Верни индекс первого элемента, равного target.
 // Если такого элемента нет, верни -1.
 func task3(codes []int, target int) int {
-	return 0
+	for i, v := range codes {
+		if v == target {
+			return i
+		}
+	}
+
+	return -1
 }
