@@ -16,21 +16,31 @@ func main() {
 // Задание 1
 // Опиши func double(n int) int на уровне пакета.
 // Положи её в переменную типа func(int) int и верни вызов с аргументом n.
+func double(n int) int {
+	return n * 2
+}
+
 func task1(n int) int {
-	return 0
+	return double(n)
 }
 
 // Задание 2
 // Опиши func apply(n int, op func(int) int) int.
 // Она возвращает op(n).
 // Вызови apply с n и функцией double.
+func apply(n int, op func(int) int) int {
+	return op(n)
+}
+
 func task2(n int) int {
-	return 0
+	return apply(n, double)
 }
 
 // Задание 3
 // Вызови apply. Вторым аргументом передай анонимную функцию:
 // она возвращает n + 1.
 func task3(n int) int {
-	return 0
+	return apply(n, func(n int) int {
+		return n + 1
+	})
 }

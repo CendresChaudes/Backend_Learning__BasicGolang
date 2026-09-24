@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"os"
+)
 
 func main() {
 	fmt.Println("Задание 1")
@@ -16,7 +19,7 @@ func main() {
 // Задание 1
 // Верни значение переменной окружения APP_PORT через os.Getenv.
 func task1() string {
-	return ""
+	return os.Getenv("APP_PORT")
 }
 
 // Задание 2
